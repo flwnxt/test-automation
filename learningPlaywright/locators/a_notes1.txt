@@ -1,0 +1,33 @@
+
+** Notes
+
+2 tipuri de API-uri
+
+sync
+async / await keyboards
+
+
+- se pot crea sesiuni interactive cu playwright din consola
+    - initierea sesiunii de playwright  se face manual, iar aceasta trebuie si inchisa
+    ( sync_playwright().start() //// sync_playwright().stop() )
+
+
+
+
+** Links:
+    - "https://bootswatch.com/default/"
+
+
+
+ """"
+ Open playwright in console.
+ - Open your dir where you have installed your venv and run the "activate" file from config by running the command:
+    - source
+- oopen python3
+- from playwright.sync_api import sync_playwright
+- playwright = sync_playwright().start()
+- browser = playwright.chromium.launch(headless=False, slow_mo=100)
+- page = browser.new_page()
+- page.goto("your_page")
+
+ """"
